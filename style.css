@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 header {
 	background-color:#445162;
 	text-align: center;
@@ -93,3 +94,14 @@ ol {
 	color: #445162;
 	font-family: "Arial";
 	text-align: center;}
+=======
+.header{
+height 325px;
+background-color: #445162;
+}
+
+.footer{
+height 280px;
+background-color: #445162;
+}
+>>>>>>> bae6195085fee12e3571062d18ba20f093ccb7c4
