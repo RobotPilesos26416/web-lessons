@@ -1,176 +1,47 @@
 <!DOCTYPE html>
 <html lang="ua">
 <head>
-<meta charset="utf-8" />
-<title>Dungen</title>
-<style>
-    body 
-    {
-    background: url(YourNameWallpaperCut.png);
-     background-repeat: no-repeat; /* Цвет фона и путь к файлу */
-     background-attachment: fixed;
-     background-size: 1660px; /* Цвет текста */ /* Цвет фона и путь к файлу */ /* Цвет текста */
-    }
-   </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя сторінка</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<p><img src="Krasavec.jpg"></p>
-<!--Создаём таблицу контейнер, которой задаём следующее
-оформление:
-border="1" - рамка вокруг контейнера. Увеличив число, можно увеличить толщину рамки.
-align="center" - размещаем контейнер по центру экрана.
-rules="rows" - убираем двойную рамку.
-style="width:60%;" - добавляем стилевое свойства, делающее
-контейнер и весь сайт "резиновым".
-Сделать полноценный адаптивный дизайн, этим способом невозможно.-->
-<table
-border="15"
-align="center"
-rules="rows"
-style="width:80%;">
+<header>
+    <img src="Krasavec.jpg" width="250" height="250" alt="Логотип"> <!-- Логотип сайта -->
+    <nav id="menu"> <!-- Меню -->
+    <h1>Нєловкін Олександр Сергійович</h1>
+    <h2>Звіт з дисципліни Web-дизайн</h2>
+    </nav>
+</header>
 
-<!--Создаём строку-->
-<tr>
-<!--Создаём ячейку строки-->
-<td>
+<main>
+    <section class = 'promenya'>
+    <h3>Про мене</h3>
+    <p class = 'ya'>Мене звати Олександр, я навчаюсь на 3 курсі на спеціальності ІПЗ.</p>
+    </section>
 
-<!--ШАПКА САЙТА-->
+    <section class = 'laby'>
+        <h3>Лабораторні роботи</h3>
 
-<!--В ячейке строки создаём ещё одну таблицу для шапки сайта.
-Оформление:
-border="1" - двойная рамка толщиной в 1px
-background="images/168.png" - картинка в шапке сайта, если требуется.
-Адрес картинки вы должны вставить свой.
-bgcolor="#7FFFD4" - фоновый цвет в шапке, если нет картинки.
-cellpadding="10" - отступ содержимого от рамки не менее 10px.
-style="width:100%; border-radius:5px;" - добавляем "резиновость"
-и закругляем уголки рамки-->
-<table
-border="15"
-bgcolor="silver"
-cellpadding="10"
-style="width:100%; border-radius:5px;">
-<!--Создаём строку таблицы-->
-<tr>
-<!--Создаём столбец таблицы-->
-<th>
-<!--Содержание ячейки столбца-->
-<h1>Нєловкін Олександр Сергійович</h1>
-<h3>Звіт з дисципліни "Web-дизайн"</h3>
-<!--Закрываем таблицу-->
-</th>
-</tr>
-</table>
+        <article>
+            <ol>
+            <li><a href="https://github.com/RobotPilesos26416/web-lessons/tree/main/01">Створення найпростішого html документу</a></li>
+            <li><a href="https://github.com/RobotPilesos26416/web-lessons/tree/main/02">Використання основних html тегів</a></li>
+            </ol>
+        </article>
+    </section>
+</main>
 
-<!--ОСНОВНОЙ КОНТЕНТ-->
+<footer>
+     <section class = 'contacty'>
+        <h4>Контакти</h4>
+            <p class = 'phon'>+38(097) 904 12 78</p>
+            <p class = 'email'>nelovkin.alex@kmrf.kiev.ua</p>
+            <p class = 'url'>https://github.com/RobotPilesos26416/web-lessons</p>
+    </section>
 
-<!--В этой же ячейке контейнера создаём ещё одну таблицу
-для основного контента.
-Оформление как и в предыдущей таблице-->
-
-<table
-border="20"
-bgcolor="white"
-cellpadding="30"
-style="width:100%; border-radius:5px;">
-<!--Создаём строку-->
-<tr>
-<!--Создаём ячейку
-Оформление:
-rowspan="2" - объединяем две ячейки в одну.
-Число объединяемых ячеек по числу ячеек в сайдбаре.
-style="width:80%" - основной контент занимает 80% всей площади,
-оставшиеся 20% для сайдбара-->
-<td
-rowspan="2"
-style="width:80%">
-<h2>Про мене</h2>
-<!--Начинаем абзац с красной строки-->
-<p style="text-indent:20px">
-Привіт, мене звати Олександр, мені 18 років, я вчуся на 3 курсі, на спеціальності ІПЗ.</p>
-
-<h2>Чому я вирішив зробити це?</h2>
-<p style="text-indent:20px">По-перше це завдання дав нам вчитель и ми повинні обов'язково його виконати.
-    По-друге тема дуже цікава та у майбутньому ці знання можуть знадобитися.</p>
-<!--Закрываем ячейку-->
-</td>
-
-<!--САЙДБАР-->
-
-<!--Создаём ячейку сайдбара-->
- <td 
- align="center"
- bgcolor="white">
-<h3>Посилання на мій GitHub</h3>
-
-<!--Абзац для ссылки на страницу сайта-->
-<p>
-<!--Ссылка на страницу сайта-->
-<a href="https://github.com/RobotPilesos26416">
-<!--Название страницы
-style="margin-left:5px;" - отступ названия от маркера-->
-<span style="margin-left:0px;">Мій GitHub</span></a>
-<!--Закрываем абзац-->
-</p>
-<!--Закрываем строку Меню-->
-</td>
-</tr>
-<!--Создаём строку с дополнительной информацией-->
-<tr>
-<!--Ячейка с дополнительной информацией-->
-<td
-bgcolor="white"
-align="center">
-<h3>Лабораторні роботи</h3>
-<p>
-    <!--Ссылка на страницу сайта-->
-    <a href="https://github.com/RobotPilesos26416/web-lessons/tree/main/01">
-    <!--Название страницы
-    style="margin-left:5px;" - отступ названия от маркера-->
-    <span style="margin-left:5px;">Перша Лабораторна</span></a>
-    <!--Закрываем абзац-->
-    </p>
-    <!--Ссылка на страницу сайта-->
-    <a href="https://github.com/RobotPilesos26416/web-lessons/tree/main/02">
-        <!--Название страницы
-        style="margin-left:5px;" - отступ названия от маркера-->
-        <span style="margin-left:5px;">Друга Лабораторна</span></a>
-        <!--Закрываем абзац-->
-        </p>
-    <!--Закрываем строку Меню-->
-    </td>
-    </tr>
-</table>
-
-<!--ПОДВАЛ-->
-
-<!--Создаём таблицу подвала-->
-<table
-border="15"
-bgcolor="silver"
-height="100"
-cellpadding="30"
-style="width:100%; border-radius:5px;">
-<!--Создаём строку.-->
-<tr>
-<!--Создаём столбец-->
-<th>
-<h3>Контакти</h3>
-<!--Начинаем абзац с красной строки-->
-<p style="text-indent:20px">
-    Телефон: 38(097)-904-12-78.</p>
-    <!--Начинаем абзац с красной строки-->
-<p style="text-indent:20px">
-    Email: alex.nelovkin2@gmail.com.</p>
-<!--Закрываем таблицу подвала. При желании в подвале можно
-сделать несколько строк и столбцов-->
-</th>
-</tr>
-</table>
-<!--Закрываем таблицу контейнера-->
-</td>
-</tr>
-</table>
-<p><img src="Krasavec.jpg" align= "right"></p>
-</body>
+    <section class = 'copyright'>
+        <p> Copyright @2021 Нєловкін О.С.</p>
+    </section>
+</footer>
 </html>
